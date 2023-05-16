@@ -51,6 +51,11 @@ public class FrmLogin extends javax.swing.JFrame {
         btnEstudiante.setText("ESTUDIANTE");
         btnEstudiante.setMaximumSize(new java.awt.Dimension(9999, 9999));
         btnEstudiante.setPreferredSize(new java.awt.Dimension(440, 60));
+        btnEstudiante.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEstudianteActionPerformed(evt);
+            }
+        });
         panelButtons.add(btnEstudiante);
 
         btnAdministrador.setBackground(new java.awt.Color(155, 164, 181));
@@ -77,6 +82,10 @@ public class FrmLogin extends javax.swing.JFrame {
         new FrmAdministrador().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnAdministradorActionPerformed
+
+    private void btnEstudianteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEstudianteActionPerformed
+        new FrmLoginEstudiante(this).setVisible(true);
+    }//GEN-LAST:event_btnEstudianteActionPerformed
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel bg;
