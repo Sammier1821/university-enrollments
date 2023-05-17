@@ -118,6 +118,7 @@ public class FrmLoginEstudiante extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSalirActionPerformed
 
     private void btnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfirmarActionPerformed
+        new FrmEstudiante().setVisible(true);
 //        if (codigo estudiante existe) {
 //            que mande mensaje sobre ingreso exitoso
 //            que cierre esta ventana

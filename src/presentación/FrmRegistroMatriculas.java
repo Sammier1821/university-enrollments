@@ -2,11 +2,11 @@ package presentación;
 
 import javax.swing.table.DefaultTableModel;
 
-public class FrmListaAsignaturas extends javax.swing.JFrame {
+public class FrmRegistroMatriculas extends javax.swing.JFrame {
 
     DefaultTableModel dtmEstudiantes = new DefaultTableModel();
     
-    public FrmListaAsignaturas(javax.swing.JFrame parent) {
+    public FrmRegistroMatriculas(javax.swing.JFrame parent) {
         initComponents();
         setLocationRelativeTo(parent);
         this.parent = parent;
@@ -24,10 +24,11 @@ public class FrmListaAsignaturas extends javax.swing.JFrame {
         title = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        jComboBox1 = new javax.swing.JComboBox<>();
         panelDatos = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
         scrollPane = new javax.swing.JScrollPane();
         tblEstudiantes = new javax.swing.JTable();
         jPanel2 = new javax.swing.JPanel();
@@ -45,7 +46,7 @@ public class FrmListaAsignaturas extends javax.swing.JFrame {
 
         title.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         title.setForeground(java.awt.Color.white);
-        title.setText("LISTA DE ASIGNATURAS");
+        title.setText("REGISTRO DE MATRÍCULAS");
         panelTitle.add(title);
 
         bg.add(panelTitle);
@@ -57,30 +58,35 @@ public class FrmListaAsignaturas extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
         jLabel4.setForeground(java.awt.Color.white);
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel4.setText("Código de asignatura:");
+        jLabel4.setText("Código del estudiante:");
         jLabel4.setPreferredSize(new java.awt.Dimension(159, 30));
         jPanel3.add(jLabel4);
 
-        jComboBox1.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jComboBox1.setPreferredSize(new java.awt.Dimension(150, 30));
-        jPanel3.add(jComboBox1);
+        jTextField1.setEnabled(false);
+        jTextField1.setPreferredSize(new java.awt.Dimension(150, 30));
+        jPanel3.add(jTextField1);
 
         jLabel1.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
         jLabel1.setForeground(java.awt.Color.white);
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel1.setText("Periodo Académico:");
+        jLabel1.setText("Ciclo:");
         jLabel1.setPreferredSize(new java.awt.Dimension(159, 30));
         jPanel3.add(jLabel1);
 
-        jComboBox2.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jComboBox2.setPreferredSize(new java.awt.Dimension(150, 30));
-        jPanel3.add(jComboBox2);
+        jComboBox1.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
+        jComboBox1.setPreferredSize(new java.awt.Dimension(150, 30));
+        jPanel3.add(jComboBox1);
 
         bg.add(jPanel3);
 
         panelDatos.setBackground(new java.awt.Color(57, 72, 103));
         panelDatos.setPreferredSize(new java.awt.Dimension(800, 500));
         panelDatos.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 30, 20));
+
+        jLabel3.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        jLabel3.setForeground(java.awt.Color.white);
+        jLabel3.setText("ASIGNATURAS MATRICULADAS");
+        panelDatos.add(jLabel3);
 
         scrollPane.setPreferredSize(new java.awt.Dimension(600, 402));
         scrollPane.setViewportView(tblEstudiantes);
@@ -129,11 +135,12 @@ public class FrmListaAsignaturas extends javax.swing.JFrame {
     private javax.swing.JPanel bg;
     private javax.swing.JButton btnSalir;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JPanel panelDatos;
     private javax.swing.JPanel panelTitle;
     private javax.swing.JScrollPane scrollPane;

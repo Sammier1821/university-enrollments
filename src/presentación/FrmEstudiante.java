@@ -176,7 +176,7 @@ public class FrmEstudiante extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRegistroMatriculaActionPerformed
 
     private void btnNotasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNotasActionPerformed
-        
+        new FrmNotas(this).setVisible(true);
     }//GEN-LAST:event_btnNotasActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
